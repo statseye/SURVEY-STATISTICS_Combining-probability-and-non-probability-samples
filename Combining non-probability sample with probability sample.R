@@ -55,19 +55,19 @@ table(data$survey_prob)
 
 names(data) <- tolower(names(data))
 
-### Estimate the accuracy of logistic regression model (as per our standard approach)
+### Estimate the accuracy of logistic regression model (benchmark) 
 
 # Define the model formula
 
 rf_formula <- tolower("survey_prob ~ region + age7sex + relationship + anychild + economic + tenure + internetuse + education + ethnic") %>% as.formula()
 rf_formula
 
-# Run logit model (as a benchmark - the usual method use)
+# Run logit model
 
 logit_m <- glm(rf_formula,
 data = data,
 family = 'binomial',
-#apply the non-response weight for probability sample, equals 1 for non-probability sample
+# apply the non-response weight for probability sample, equals 1 for non-probability sample
 weights = data$weight_prob)
 
 logit_m
