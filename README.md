@@ -1,5 +1,5 @@
 # Survey-statistics_combining-probability-and-non-probability-samples
-**Application of random forests in alignment of non-probability online sample to random probability sample**
+**Application of random forests in combining non-probability online sample with random probability sample**
 
 Given the high cost associated with probability samples, there is increasing demand for combining non-probability samples with probability samples to increase sample size for low incidence studies and/or key analytic subgroups. Given bias and coverage error inherent in non-probability samples, a common approach is to apply weighting in order to remove (mainly observable) bias. When a survey is administered using both probability and non-probability samples, it is possible to align the profile of the latter (usually larger) with the profile of the probability sample (usually also adjusted for differential selection probabilities and non-response). The adjustment should be done on questions that were asked in both surveys in the same way, ideally charactersitics that are correlated with key survey estimates or ones that drive the differences between the two populations (e.g. Internet use if non-probability sample comes from an online panel). 
 
